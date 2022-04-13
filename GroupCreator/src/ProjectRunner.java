@@ -25,7 +25,7 @@ public class ProjectRunner
 						String[] filler = tempArray.split(" ");
 						StudentList.add(new Student(filler[0], filler[1]));
 					}
-				// hety
+				// hetyyy
 				
 			}
 
