@@ -12,7 +12,7 @@ public class ProjectRunner
 		public static void main(String[] args) throws IOException
 			{
 				fillArrayList();
-
+				
 			}
 		
 		public static void fillArrayList() throws IOException
@@ -23,7 +23,9 @@ public class ProjectRunner
 					{
 						String tempArray = myFile.nextLine();
 						String[] filler = tempArray.split(" ");
+						//System.out.println(filler[0]);
 						StudentList.add(new Student(filler[0], filler[1]));
+						
 					}
 				// hetyyy
 				
