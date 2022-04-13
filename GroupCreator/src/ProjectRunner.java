@@ -19,13 +19,15 @@ public class ProjectRunner
 			{
 				// filling array list
 				Scanner myFile = new Scanner(new File("StudentList.txt"));
-				while (myFile.hasNext())
+				int numberOfLines = myFile.nextInt();
+				
+				for(int i = 0; i < numberOfLines; i++)
 					{
 						String tempArray = myFile.nextLine();
 						String[] filler = tempArray.split(" ");
-						//System.out.println(filler[0]);
-						StudentList.add(new Student(filler[0], filler[1]));
-						
+
+						StudentList.add(new Student(filler[i], filler[i + 1]));
+
 					}
 				
 				
