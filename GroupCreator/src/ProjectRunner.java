@@ -11,8 +11,8 @@ public class ProjectRunner
 		
 		public static void main(String[] args) throws IOException
 			{
-				fillArrayList();
-				
+				fillArrayList();			
+
 			}
 		
 		public static void fillArrayList() throws IOException
@@ -27,7 +27,7 @@ public class ProjectRunner
 						StudentList.add(new Student(filler[0], filler[1]));
 						
 					}
-				// hetyyy
+				
 				
 			}
 
