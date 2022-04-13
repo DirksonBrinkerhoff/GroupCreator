@@ -11,8 +11,8 @@ public class ProjectRunner
 		
 		public static void main(String[] args) throws IOException
 			{
+				fillArrayList();			
 
-				fillArrayList();
 			}
 		
 		public static void fillArrayList() throws IOException
@@ -25,9 +25,11 @@ public class ProjectRunner
 					{
 						String tempArray = myFile.nextLine();
 						String[] filler = tempArray.split(" ");
+
 						StudentList.add(new Student(filler[i], filler[i + 1]));
+
 					}
-				// hetyyyyyy
+				
 				
 			}
 
