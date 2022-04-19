@@ -31,8 +31,12 @@ public class ProjectRunner
 						StudentList.add(myFile.nextLine());
 
 					}
+<<<<<<< HEAD
+								System.out.println(StudentList);
+=======
 				
 
+>>>>>>> upstream/master
 				
 			}
 		public static void promptUser()
