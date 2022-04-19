@@ -6,9 +6,10 @@ import java.util.Scanner;
 public class ProjectRunner
 	{
 		// Array list
-		public static ArrayList<Student> StudentList = new ArrayList<Student>();
+		public static ArrayList<String> StudentList = new ArrayList<String>();
 		// New Scanner
 		public static Scanner userStringInput = new Scanner(System.in);
+		static int countGroup = 0;
 		
 		public static void main(String[] args) throws IOException
 			{
@@ -20,14 +21,14 @@ public class ProjectRunner
 			{
 				// filling array list
 				Scanner myFile = new Scanner(new File("StudentList.txt"));
-				int numberOfLines = myFile.nextInt();
+				//int numberOfLines = myFile.nextInt();
 				
-				for(int i = 0; i < numberOfLines; i++)
+				while(myFile.hasNextLine())
 					{
-						String tempArray = myFile.nextLine();
-						String[] filler = tempArray.split(" ");
+						//String tempArray = myFile.nextLine();
+						//String[] filler = tempArray.split(" ");
 
-						StudentList.add(new Student(filler[i], filler[i + 1]));
+						StudentList.add(myFile.nextLine());
 
 					}
 				
