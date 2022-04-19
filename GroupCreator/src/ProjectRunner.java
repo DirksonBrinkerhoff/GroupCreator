@@ -7,12 +7,13 @@ public class ProjectRunner
 	{
 		// Array list
 		public static ArrayList<Student> StudentList = new ArrayList<Student>();
-		
+		// New Scanner
+		public static Scanner userStringInput = new Scanner(System.in);
 		
 		public static void main(String[] args) throws IOException
 			{
-				fillArrayList();			
-
+				fillArrayList();
+				promptUser();
 			}
 		
 		public static void fillArrayList() throws IOException
@@ -32,5 +33,14 @@ public class ProjectRunner
 				
 				
 			}
+		public static void promptUser()
+		{
+			//Question
+			System.out.println("How many groups would you like to create?");
+			
+			//Userinput
+			String numberOfGroups = userStringInput.nextLine();
+			
+		}
 
 	}
