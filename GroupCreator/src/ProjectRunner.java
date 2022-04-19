@@ -30,11 +30,7 @@ public class ProjectRunner
 						StudentList.add(new Student(filler[i], filler[i + 1]));
 
 					}
-<<<<<<< HEAD
-				System.out.println(StudentList);
-=======
-				
->>>>>>> upstream/master
+								System.out.println(StudentList);
 				
 			}
 		public static void promptUser()
